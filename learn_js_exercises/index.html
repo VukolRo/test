@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		function countSheep(arrayOfSheep) {
+			let presentSheep = arrayOfSheep.filter(item => item == "true");
+			return presentSheep.length;
+		}
+		var array1 = [true,  true,  true,  false,
+              true,  true,  true,  true ,
+              true,  false, true,  false,
+              true,  false, false, true ,
+              true,  true,  true,  true ,
+              false, false, true,  true ];
+              
+		console.log( countSheep(array1) );
+	</script>
+</body>
+</html>
+
+
+
